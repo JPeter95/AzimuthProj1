@@ -1,0 +1,194 @@
+/******************************************************************************
+ * File:    azimuth.css
+ * Project: CMSC 433 Project 1, Spring 2016
+ * Authors: Thomas Wallace,
+ * Date:    20 March 2016
+ * Section: 2
+ * E-mails: thwalla1@umbc.edu,
+ *
+ * Description:
+ *          Azimuth Academic Degree Course Advisor CSS stylesheet.
+ *
+ *****************************************************************************/
+
+/*html - Normalizes potential browser html CSS*/
+html {
+
+    /*Layout Normalize*/
+    margin: 0;
+    padding: 0;
+}
+
+/*body - Normalizes CSS for div.container to handle viewport scaling*/
+body {
+
+    /*Layout Properties*/
+    margin: 0;
+    padding-bottom: 50px;
+
+    /*Content Properties*/
+    background-color: rgb(80,80,80);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*container - Layout container, handles primary viewport scaling*/
+div.container {
+
+    /*Layout Properties*/
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1000px;
+    min-width: 800px;
+    height: auto;
+    min-height: 800px;
+    padding: 0px;
+  
+
+    /*Content Properties*/
+    background-color: white;
+
+    /*CSS3 Features*/
+    box-shadow: 0px 5px 15px black;
+}
+
+/*header - Div element for webpage header content*/
+div.header {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+
+    /*Content Properties*/
+    background-color: black;
+}
+
+/*footer - Div element for webpage footer content*/
+div.footer {
+
+    /*Layout Properties*/
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+
+    /*Content Properties*/
+    background-color: blue;
+}
+
+/*title - Div element for webpage title alignment*/ 
+div.title {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 10px;
+    left: 30px;
+
+    /*Content Properties*/
+    color: white;
+}
+
+/*header-image - Layout formating for header image*/
+img.header-image {
+
+    /*Layout Properties*/
+    position: absolute;
+    float: right;
+    top: 0px;
+    right: 0px;
+    height: 150px;
+}
+
+/*nav-bar - Horizontal navigation bar, requires following list formatting*/
+div.nav-bar {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 150px;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+
+    /*Content Properties*/
+    background-color: rgb(255,204,0);
+}
+
+.nav-bar ul {
+
+    /*Layout Properties*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    /*Content Properties*/
+    list-style-type: none;
+    background-color: rgb(255,204,0);   
+}
+
+.nav-bar li {
+    
+    /*Layout Properties*/
+    float: left;
+
+    /*Content Properties*/
+    border-right: 1px solid black;
+}
+
+.nav-bar li a {
+
+    /*Layout Properties*/
+    display: block;
+    padding: 15px 30px;
+
+    /*Content Properties*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+
+    /*Content Properties*/
+    background-color: black;
+    color: white;
+}
+
+/*article - Div element for webpage footer content*/
+div.article {
+
+    /*Layout Properties*/
+    position: relative;
+    top: 200px;
+    bottom: 100px;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    height-min: 100px;
+    display: inline-block;
+
+    /*Content Properties*/
+    background-color: red;
+}
+
+/*footer - Div element for webpage footer content*/
+div.footer {
+
+    /*Layout Properties*/
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+
+    /*Content Properties*/
+    background-color: blue;
+}
