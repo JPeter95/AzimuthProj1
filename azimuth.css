@@ -31,55 +31,53 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*p - Normalizes CSS for paragraphs*/
+p {
+
+    /*Layout Properties*/
+    margin: 0;
+    padding: 0px 0px 15px 0px;
+}
+
+/*h - Formats Header2 for use in article div section*/
+h2 {
+
+    /*Layout Properties*/
+    margin-top: 5px;
+}
+
 /*container - Layout container, handles primary viewport scaling*/
 div.container {
 
     /*Layout Properties*/
+    
     position: relative;
     margin: 0 auto;
     width: 75%;
     max-width: 1000px;
     min-width: 800px;
     height: auto;
-    min-height: 800px;
-    padding: 0px;
-  
+    padding: 0px;  
 
     /*Content Properties*/
     background-color: white;
-
-    /*CSS3 Features*/
-    box-shadow: 0px 5px 15px black;
+    box-shadow: 0px 5px 15px black; /*CSS3 Feature - Non-critical*/
 }
 
 /*header - Div element for webpage header content*/
 div.header {
 
     /*Layout Properties*/
-    position: absolute;
-    top: 0px;
-    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
     width: 100%;
     height: 150px;
     padding: 0;
 
     /*Content Properties*/
     background-color: black;
-}
-
-/*footer - Div element for webpage footer content*/
-div.footer {
-
-    /*Layout Properties*/
-    position: absolute;
-    bottom: 0px;
-    margin: 0 auto;
-    width: 100%;
-    height: 100px;
-    padding: 0;
-
-    /*Content Properties*/
-    background-color: blue;
+    color: white;
 }
 
 /*title - Div element for webpage title alignment*/ 
@@ -89,9 +87,6 @@ div.title {
     position: absolute;
     top: 10px;
     left: 30px;
-
-    /*Content Properties*/
-    color: white;
 }
 
 /*header-image - Layout formating for header image*/
@@ -99,7 +94,6 @@ img.header-image {
 
     /*Layout Properties*/
     position: absolute;
-    float: right;
     top: 0px;
     right: 0px;
     height: 150px;
@@ -109,15 +103,15 @@ img.header-image {
 div.nav-bar {
 
     /*Layout Properties*/
-    position: absolute;
-    top: 150px;
-    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
     width: 100%;
     height: 50px;
     padding: 0;
 
     /*Content Properties*/
-    background-color: rgb(255,204,0);
+    background-color: rgb(255,204,0); /*UMBC Gold per Style Guide*/
+    color: black;
 }
 
 .nav-bar ul {
@@ -129,7 +123,8 @@ div.nav-bar {
 
     /*Content Properties*/
     list-style-type: none;
-    background-color: rgb(255,204,0);   
+    background-color: rgb(255,204,0); /*UMBC Gold per Style Guide*/
+    color: black;
 }
 
 .nav-bar li {
@@ -145,7 +140,7 @@ div.nav-bar {
 
     /*Layout Properties*/
     display: block;
-    padding: 15px 30px;
+    padding: 16px 30px;
 
     /*Content Properties*/
     color: black;
@@ -161,34 +156,94 @@ div.nav-bar {
     color: white;
 }
 
+/*END HEADER CONTENT**********************************************************/
+
 /*article - Div element for webpage footer content*/
 div.article {
 
     /*Layout Properties*/
-    position: relative;
-    top: 200px;
-    bottom: 100px;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
-    height-min: 100px;
     display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; /*CSS3 Feature - Critical Potential Width Issue*/
+    width: 100%;
+    height: auto;
+    height-min: 400px;
+    padding: 30px 30px 15px 30px;
 
     /*Content Properties*/
-    background-color: red;
+    background-color: white;
+    color: black;
 }
+
+/*sidebar - Div element for fixed-position sidebar, floats right of article*/
+div.sidebar {
+
+    /*Layout Properties*/
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin: 0px 0px 15px 20px;
+    box-sizing: border-box;
+    width: 250px;
+    height: auto:
+    height-min: 200px;
+    padding: 20px 20px 10px 20px;
+
+    /*Content Properties*/
+    background-color: rgb(255,240,180); /*Lighter UMBC Gold*/
+}
+
+/*BEGIN FOOTER CONTENT********************************************************/
 
 /*footer - Div element for webpage footer content*/
 div.footer {
 
     /*Layout Properties*/
-    position: absolute;
-    bottom: 0px;
-    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
     width: 100%;
     height: 100px;
     padding: 0;
 
     /*Content Properties*/
-    background-color: blue;
+    background-color: rgb(255,204,0); /*UMBC Gold per Style Guide*/
+    color: black;
+}
+
+/*department - Div element for webpage footer department info alignment*/
+div.department {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/*contact - Div element for webpage footer contact info alignment*/
+div.contact {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 40px;
+    right: 30px;
+
+    /*Content Properties*/
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a {
+
+    /*Content Properties*/
+    color: black;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+.contact a:hover {
+
+    /*Content Properties*/
+    color: black;
+    text-decoration: underline;
 }
