@@ -40,7 +40,7 @@ echo("<p>Please enter your information below:<br /></p>");
 <?php
 $servername = "studentdb-maria.gl.umbc.edu";
 $username = "joneill2";
-$password = "catdogdonutman27";
+$password = "";
 
 $link = mysql_connect($servername, $username, $password);
 if (!$link) {
