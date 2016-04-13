@@ -1,0 +1,459 @@
+/******************************************************************************
+ * File:    azimuth.css
+ * Project: CMSC 433 Project 1, Spring 2016
+ * Authors: Thomas Wallace,
+ * Date:    20 March 2016
+ * Section: 2
+ * E-mails: thwalla1@umbc.edu,
+ *
+ * Description:
+ *          Azimuth Academic Degree Course Advisor CSS stylesheet.
+ *
+ *****************************************************************************/
+
+/*html - Normalizes potential browser html CSS*/
+html {
+
+    /*Layout Normalize*/
+    margin: 0;
+    padding: 0;
+}
+
+/*body - Normalizes CSS for div.container to handle viewport scaling*/
+body {
+
+    /*Layout Properties*/
+    margin: 0;
+    padding-bottom: 50px;
+
+    /*Content Properties*/
+    background-color: rgb(89,89,89); /*Dark Grey*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*p - Normalizes CSS for paragraphs*/
+p {
+
+    /*Layout Properties*/
+    margin: 0;
+    padding: 0px 0px 15px 0px;
+}
+
+/*h - Formats Header2 for use in article div section*/
+h2 {
+
+    /*Layout Properties*/
+    margin-top: 5px;
+}
+
+/*container - Layout container, handles primary viewport scaling*/
+div.container {
+
+    /*Layout Properties*/
+    
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1000px;
+    min-width: 800px;
+    height: auto;
+    padding: 0px;  
+
+    /*Content Properties*/
+    background-color: white;
+    box-shadow: 0px 5px 15px black; /*CSS3 Feature - Non-critical*/
+}
+
+/*header - Div element for webpage header content*/
+div.header {
+
+    /*Layout Properties*/
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+
+    /*Content Properties*/
+    background-color: black;
+    color: white;
+}
+
+/*title - Div element for webpage title alignment*/ 
+div.title {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+/*header-image - Layout formating for header image*/
+img.header-image {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 150px;
+}
+
+/*nav-bar - Horizontal navigation bar, requires following list formatting*/
+div.nav-bar {
+
+    /*Layout Properties*/
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+
+    /*Content Properties*/
+    background-color: rgb(255,204,0); /*UMBC Gold per Style Guide*/
+    color: black;
+}
+
+.nav-bar ul {
+
+    /*Layout Properties*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    /*Content Properties*/
+    list-style-type: none;
+    background-color: rgb(255,204,0); /*UMBC Gold per Style Guide*/
+    color: black;
+}
+
+.nav-bar li {
+    
+    /*Layout Properties*/
+    float: left;
+
+    /*Content Properties*/
+    border-right: 1px solid black;
+}
+
+.nav-bar li a {
+
+    /*Layout Properties*/
+    display: block;
+    padding: 16px 30px;
+
+    /*Content Properties*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+
+    /*Content Properties*/
+    background-color: black;
+    color: white;
+}
+
+/*END HEADER CONTENT**********************************************************/
+
+/*article - Div element for webpage footer content*/
+div.article {
+
+    /*Layout Properties*/
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; /*CSS3 Feature - Critical Potential Width Issue*/
+    width: 100%;
+    height: auto;
+    height-min: 400px;
+    padding: 30px 30px 15px 30px;
+
+    /*Content Properties*/
+    background-color: white;
+    color: black;
+}
+
+/*sidebar - Div element for fixed-position sidebar, floats right of article*/
+div.sidebar {
+
+    /*Layout Properties*/
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin: 0px 0px 15px 20px;
+    box-sizing: border-box;
+    width: 250px;
+    height: auto:
+    height-min: 200px;
+    padding: 20px 20px 10px 20px;
+
+    /*Content Properties*/
+    background-color: rgb(255,240,180); /*Lighter UMBC Gold*/
+}
+
+/*FORM ELEMENT CUSTOMIZATION**************************************************/
+
+/*fieldset - Custom fieldset styling for form inputs*/
+fieldset {
+
+    /*Layout Properties*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px 15px 15px 15px;
+
+    /*Content Properties*/
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+/*legend - Custom legend styling for form inputs*/
+legend {
+
+    /*Layout Properties*/
+    margin-left: 20px;
+    margin-bottom: -5px;
+}
+
+/*label - Custom label styling for form inputs*/
+label {
+
+    /*Layout Properties*/
+    margin-left: 20px;
+}
+
+/*select - Custom select dropdown label styling for form inputs*/
+select {
+
+    /*Layout Properties*/
+    display: inline-block;
+    margin: 5px 10px 5px 20px;
+    padding: 5px 5px;
+
+    /*Content Properties*/
+    border: 2px solid grey;
+}
+
+/*submit - Custom submit button styling for form inputs*/
+input[type=submit] {
+
+    /*Layout Properties*/
+    float: right;
+    margin: -10px 5px 5px 5px;
+    padding: 5px 15px;
+
+    /*Content Properties*/
+}
+
+/*email, text - Custom email and text field styling for form inputs*/
+input[type=email], input[type=text] {
+
+    /*Layout Properties*/
+    display: inline-block;
+    margin: 5px 10px 5px 20px;
+    width: 40%;
+    min-width: 200px;
+    padding: 5px 5px;
+
+    /*Content Properties*/
+    border: 2px solid grey;
+    border-radius: 1px;
+}
+
+/*email:focus, text:focus - Custom focus effects for email and text fields*/
+input[type=email]:focus, input[type=text]:focus {
+
+    /*Content Properties*/
+    border: 2px solid black;
+}
+
+/*error - User input error text styling*/
+div.error {
+
+    /*Layout Properties*/
+    display: inline-block;
+
+    /*Content Properties*/
+    color: red;
+}
+
+/*TABLE CUSTOMIZATION*********************************************************/
+
+div.table {
+
+    display: table;
+    width: 100%;
+}
+
+div.row {
+
+    /*Layout Properties*/
+    display: table-row;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    padding: 0px;
+    
+    /*Content Properties*/
+    background: rgb(250,250,255);
+    box-shadow: 0px 3px 2px grey;
+}
+
+/*.course - Custom course row (even) for course output*/
+div.row:nth-child(even) {
+
+    /*Content Properties*/
+    background: rgb(240,240,245);
+}
+
+div.box {
+
+    /*Layout Properties*/
+    display: table-cell;
+    vertical-align: top;
+    padding: 5px;
+
+    /*Content Properties*/
+    text-align: center;
+}
+
+div.course {
+    
+    /*Layout Properties*/
+    display: table-cell;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+
+    /*Content Properties*/
+    text-align: left;
+    cursor: pointer;
+}
+
+div.dropdown {
+
+    /*Layout Properties*/
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+
+    /*Content Properties*/
+    text-align: left;
+    font-size: 85%;
+}
+
+.course:active .dropdown {
+
+    /*Layout Properties*/
+    display: block;
+}
+
+
+/*DEPRECIATED TABLE **********************************************************/
+
+/*table - Custom table for course output*/
+table {
+
+    /*Layout Properties*/
+    width: 100%;
+
+    /*Content Properties*/
+
+}
+
+/*tr - Custom table row (default) for course output*/
+tr {
+
+    /*Layout Properties*/
+    margin: 5px;
+    
+    /*Content Properties*/
+    background: rgb(245,245,245);
+    border-collapse: collapse;
+    box-shadow: 0px 2px 2px grey;
+}
+
+/*tr - Custom table row (even) for course output*/
+tr:nth-child(even) {
+
+    /*Content Properties*/
+    background: rgb(235,235,235);
+}
+
+td {
+
+    /*Layout Properties*/
+    vertical-align: middle;
+    padding: 10px;
+
+    /*Content Properties*/
+    text-align: left;
+}
+
+
+/*td.checkbox - Custom table data element for checkbox output*/
+td:first-child {
+
+    /*Layout Properties*/
+    width: 20px;
+
+    /*Content Properties*/
+    text-align: center;
+}
+
+/*BEGIN FOOTER CONTENT********************************************************/
+
+/*footer - Div element for webpage footer content*/
+div.footer {
+
+    /*Layout Properties*/
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+
+    /*Content Properties*/
+    background-color: rgb(255,204,0); /*UMBC Gold per Style Guide*/
+    color: black;
+}
+
+/*department - Div element for webpage footer department info alignment*/
+div.department {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/*contact - Div element for webpage footer contact info alignment*/
+div.contact {
+
+    /*Layout Properties*/
+    position: absolute;
+    top: 40px;
+    right: 30px;
+
+    /*Content Properties*/
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a {
+
+    /*Content Properties*/
+    color: black;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+.contact a:hover {
+
+    /*Content Properties*/
+    color: black;
+    text-decoration: underline;
+}
